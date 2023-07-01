@@ -32,7 +32,7 @@ ORDER BY 1, 2;
 
 SELECT Location, Date, total_cases, total_deaths, (total_deaths/total_cases) * 100 AS DeathPercentage
 FROM CovidDeaths$
-WHERE Location LIKE '%Nigeria%'
+WHERE Location LIKE '%United States%'
 AND continent IS NOT NULL
 ORDER BY 1, 2;
 
@@ -49,7 +49,7 @@ ORDER  BY 1, 2;
 SELECT Location, Date, population, total_cases, (total_cases/population) * 100  AS PercentPopulationInfected
 FROM CovidDeaths$
 WHERE continent IS NOT NULL
-AND Location LIKE '%Nigeria%'
+AND Location LIKE '%United States%'
 ORDER  BY 1, 2;
 
 
